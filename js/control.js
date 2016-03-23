@@ -64,7 +64,7 @@ function connect(){
    	 		self.qims.service("ALTextToSpeech")
    	 			.done(function (tts)
    	 			{
-   	 	        	tts.say("接続、成功しました");
+   	 	        	console.log("接続、成功しました");
    	 	       });
    	 	       		// 接続成功したら各種セットアップを行う
      	       		setupIns_();
@@ -95,8 +95,6 @@ function changeAudioVolume(){
 	volume = Number(volume);
 	console.log(Number(volume));
 	self.alAudioDevice.setOutputVolume(volume);
-	self.hello();
-
 }
 
 
